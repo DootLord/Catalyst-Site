@@ -43,4 +43,49 @@ document.addEventListener('DOMContentLoaded', function() {
             backToTop.classList.remove('active');
         }
     });
+    
+    // Simple Lightbox for Gallery Images
+    const galleryLinks = document.querySelectorAll('.gallery-zoom');
+    
+    // Create lightbox elements
+    const lightbox = document.createElement('div');
+    lightbox.className = 'lightbox';
+    
+    const lightboxContent = document.createElement('div');
+    lightboxContent.className = 'lightbox-content';
+    
+    const lightboxImage = document.createElement('img');
+    lightboxImage.className = 'lightbox-image';
+    
+    const lightboxClose = document.createElement('div');
+    lightboxClose.className = 'lightbox-close';
+    lightboxClose.innerHTML = '&times;';
+    
+    // Assemble lightbox
+    lightboxContent.appendChild(lightboxImage);
+    lightbox.appendChild(lightboxContent);
+    lightbox.appendChild(lightboxClose);
+    document.body.appendChild(lightbox);
+    
+    // Add click events to gallery links
+    galleryLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const imgSrc = this.getAttribute('href');
+            lightboxImage.setAttribute('src', imgSrc);
+            lightbox.classList.add('active');
+        });
+    });
+    
+    // Close lightbox on click
+    lightboxClose.addEventListener('click', () => {
+        lightbox.classList.remove('active');
+    });
+    
+    // Close lightbox when clicking outside the image
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) {
+            lightbox.classList.remove('active');
+        }
+    });
 });
