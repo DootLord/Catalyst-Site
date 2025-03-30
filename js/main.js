@@ -1,22 +1,46 @@
-document.addEventListener("DOMContentLoaded", () => {
-    // Initialize AOS (Animate on Scroll)
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize AOS animation library
     AOS.init({
-        duration: 1000,
+        duration: 800,
+        easing: 'ease-in-out',
         once: true,
+        mirror: false
     });
-
-    // Back to Top Button
-    const backToTop = document.querySelector('.back-to-top');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 300) {
-            backToTop.classList.add('show');
+    
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 70,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+    
+    // Handle navbar color change on scroll
+    const navbar = document.querySelector('.navbar');
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 50) {
+            navbar.classList.add('navbar-scrolled');
         } else {
-            backToTop.classList.remove('show');
+            navbar.classList.remove('navbar-scrolled');
         }
     });
-
-    backToTop.addEventListener('click', (e) => {
-        e.preventDefault();
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+    
+    // Back to top button visibility
+    const backToTop = document.querySelector('.back-to-top');
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 300) {
+            backToTop.classList.add('active');
+        } else {
+            backToTop.classList.remove('active');
+        }
     });
 });
