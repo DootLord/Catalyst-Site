@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalyst RP - Immersive Gaming Experience</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.1/tsparticles.min.js"></script>
+</head>
+<body
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <img src="assets/logo.png" alt="Catalyst RP Logo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#roadmap">Roadmap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-join" href="#join">Join Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div id="particles-js"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+                    <h1 class="glitch-text">Catalyst<span class="highlight"> RP</span></h1>
+                    <p class="hero-subtitle">A next-generation roleplay experience</p>
+                    <p class="hero-description">Immerse yourself in a vibrant world where your choices shape the narrative and your legacy.</p>
+                    <div class="hero-buttons">
+                        <a href="#join" class="btn btn-primary btn-glow" aria-label="Get Started">Get Started</a>
+                        <a href="#trailer" class="btn btn-outline-light" aria-label="Watch Trailer"><i class="fas fa-play me-2"></i>Watch Trailer</a>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+                    <div class="hero-image">
+                        <div class="pixel-border">
+                            <img src="assets/logo.png" alt="Catalyst RP Hero Image" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pixel-divider"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <h2>About <span class="highlight">Catalyst RP</span></h2>
+                <div class="divider"></div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="about-image">
+                        <div class="glitch-wrapper pixel-border">
+                            <div class="glitch-image"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+                    <div class="about-content">
+                        <h3>Enter the World of Catalyst</h3>
+                        <p>Catalyst RP offers a meticulously crafted world where roleplay meets innovation. Our game combines cutting-edge mechanics with a vibrant community to deliver an unparalleled gaming experience.</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="feature-box">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-users"></i>
+                                    </div>
+                                    <div class="feature-text">
+                                        <h4>Community Driven</h4>
+                                        <p>Join thousands of players in a living, breathing world shaped by the community.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="feature-box">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-gamepad"></i>
+                                    </div>
+                                    <div class="feature-text">
+                                        <h4>Unique Gameplay</h4>
+                                        <p>Experience innovative mechanics that prioritize immersive roleplay and player agency.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section section-dark">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <h2>Game <span class="highlight">Features</span></h2>
+                <div class="divider"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="feature-card">
+                        <div class="feature-card-icon">
+                            <i class="fas fa-city"></i>
+                        </div>
+                        <h3>Dynamic World</h3>
+                        <p>Explore a vast, interactive environment that evolves based on player actions and decisions.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="feature-card">
+                        <div class="feature-card-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3>Unique Careers</h3>
+                        <p>Choose from dozens of career paths, each with their own progression systems and special abilities.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="feature-card">
+                        <div class="feature-card-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>Advanced Interaction</h3>
+                        <p>Enjoy seamless communication and immersive interaction systems that bring roleplay to life.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="feature-card">
+                        <div class="feature-card-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <h3>Custom Vehicles</h3>
+                        <p>Modify and personalize your vehicles with our extensive customization system.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="feature-card">
+                        <div class="feature-card-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Property System</h3>
+                        <p>Own and customize properties throughout the world, from apartments to businesses.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="feature-card">
+                        <div class="feature-card-icon">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <h3>Dynamic Events</h3>
+                        <p>Experience regular events that change the game world and provide new opportunities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pixel-divider inverted"></div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <h2>Game <span class="highlight">Gallery</span></h2>
+                <div class="divider"></div>
+            </div>
+            <div class="row gallery-grid">
+                <div class="col-lg-4 col-md-6" data-aos="flip-left" data-aos-delay="100">
+                    <div class="gallery-item pixel-border">
+                        <div class="gallery-overlay">
+                            <a href="https://example.com/gallery1" class="gallery-zoom" aria-label="View Gallery Image 1"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                        <div class="gallery-image" style="background-image: url('assets/gallery1.jpg')" aria-label="Gallery Image 1"></div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="flip-left" data-aos-delay="200">
+                    <div class="gallery-item pixel-border">
+                        <div class="gallery-overlay">
+                            <a href="https://example.com/gallery2" class="gallery-zoom" aria-label="View Gallery Image 2"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                        <div class="gallery-image" style="background-image: url('assets/gallery2.jpg')" aria-label="Gallery Image 2"></div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="flip-left" data-aos-delay="300">
+                    <div class="gallery-item pixel-border">
+                        <div class="gallery-overlay">
+                            <a href="https://example.com/gallery3" class="gallery-zoom" aria-label="View Gallery Image 3"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                        <div class="gallery-image" style="background-image: url('assets/gallery3.jpg')" aria-label="Gallery Image 3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap" class="section section-dark">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <h2>Development <span class="highlight">Roadmap</span></h2>
+                <div class="divider"></div>
+            </div>
+            <div class="roadmap">
+                <div class="roadmap-item" data-aos="fade-right">
+                    <div class="roadmap-point completed"></div>
+                    <div class="roadmap-content">
+                        <h3>Q1 2025: Foundation</h3>
+                        <p>Core systems development and world building complete.</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 100%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="roadmap-item" data-aos="fade-left">
+                    <div class="roadmap-point completed"></div>
+                    <div class="roadmap-content">
+                        <h3>Q2 2025: Alpha Testing</h3>
+                        <p>Closed alpha testing with core community members.</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 100%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="roadmap-item" data-aos="fade-right">
+                    <div class="roadmap-point current"></div>
+                    <div class="roadmap-content">
+                        <h3>Q3 2025: Beta Launch</h3>
+                        <p>Open beta with expanded features and systems.</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="roadmap-item" data-aos="fade-left">
+                    <div class="roadmap-point"></div>
+                    <div class="roadmap-content">
+                        <h3>Q4 2025: Official Release</h3>
+                        <p>Full launch with all planned features implemented.</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 30%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="roadmap-item" data-aos="fade-right">
+                    <div class="roadmap-point"></div>
+                    <div class="roadmap-content">
+                        <h3>2026: Expansion</h3>
+                        <p>New content, blah blah.</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 10%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pixel-divider"></div>
+    </section>
+
+    <!-- Join Section -->
+    <section id="join" class="section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <h2>Join <span class="highlight">Catalyst RP</span></h2>
+                <div class="divider"></div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="join-content">
+                        <h3>Ready to Begin Your Journey?</h3>
+                        <p>Join our community today to stay updated on development progress, participate in beta testing, and be the first to experience Catalyst RP when it launches.</p>
+                        <div class="social-links">
+                            <a href="https://discord.gg/catalystrp" class="social-link" aria-label="Join us on Discord"><i class="fab fa-discord"></i> Discord</a>
+                            <a href="https://twitter.com/CatalystRP" class="social-link" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i> Twitter</a>
+                            <a href="https://youtube.com/CatalystRP" class="social-link" aria-label="Subscribe to our YouTube channel"><i class="fab fa-youtube"></i> YouTube</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="join-form pixel-border">
+                        <h3>Get Early Access</h3>
+                        <form>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Name">
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="3" placeholder="Why do you want to join Catalyst RP?"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block btn-glow">Submit Application</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="assets/logo.png" alt="Catalyst RP" class="footer-logo">
+                    <p>A next-generation roleplay experience where your choices matter.</p>
+                </div>
+                <div class="col-lg-4">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#roadmap">Roadmap</a></li>
+                        <li><a href="#join">Join Now</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h4>Contact</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-envelope"></i> info@catalystrp.com</li>
+                        <li><i class="fab fa-discord"></i> discord.gg/catalystrp</li>
+                        <li><i class="fab fa-twitter"></i> @CatalystRP</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Catalyst RP. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#home" class="back-to-top" aria-label="Back to top"><i class="fas fa-chevron-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS.load('particles-js', 'assets/particles.json', function() {
+            console.log('Particles.js configuration loaded.');
+        });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>
