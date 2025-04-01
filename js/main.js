@@ -89,3 +89,10 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+// Load video only after page render
+window.addEventListener('load', function() {
+    const video = document.getElementById('heroVideo');
+    video.src = 'assets/background.mp4';
+    video.load();
+});
