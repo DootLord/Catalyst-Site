@@ -1,3 +1,7 @@
+/**
+ * Main JavaScript for Catalyst RP - FiveM Roleplay Website
+ * Enhances user experience for the premier FiveM RP community
+ */
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize AOS animation library
     AOS.init({
