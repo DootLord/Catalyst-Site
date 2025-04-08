@@ -6,7 +6,12 @@ body {
     overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Press Start 2P', cursive;
     color: #ffffff;
 }
@@ -16,23 +21,23 @@ h1, h2, h3, h4, h5, h6 {
     h1 {
         font-size: 2.5rem;
     }
-    
+
     h2 {
         font-size: 2rem;
     }
-    
+
     h3 {
         font-size: 1.5rem;
     }
-    
+
     .glitch-text {
         font-size: 2.5rem !important;
     }
-    
+
     .section-header h2 {
         font-size: 1.8rem !important;
     }
-    
+
     p {
         font-size: 0.95rem;
     }
@@ -79,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
     .social-links {
         justify-content: center;
     }
-    
+
     .join-content {
         text-align: center;
         margin-bottom: 30px;
@@ -106,6 +111,10 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 15px;
 }
 
+.join-form .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.75);
+}
+
 .join-form .form-control:focus {
     border-color: var(--secondary-color);
     box-shadow: 0 0 5px var(--secondary-color);
@@ -129,8 +138,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Navigation */
 .navbar {
-    height: 70px; /* Reduced height for a slimmer navbar */
-    padding: 10px 20px; /* Adjusted padding for better alignment */
+    height: 70px;
+    /* Reduced height for a slimmer navbar */
+    padding: 10px 20px;
+    /* Adjusted padding for better alignment */
     background: linear-gradient(135deg, #ff00ff, #00ffff);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     transition: all 0.3s ease;
@@ -141,7 +152,7 @@ h1, h2, h3, h4, h5, h6 {
         height: auto;
         padding: 10px;
     }
-    
+
     .navbar-collapse {
         background: linear-gradient(135deg, #000428, #004e92);
         padding: 15px;
@@ -149,11 +160,11 @@ h1, h2, h3, h4, h5, h6 {
         margin-top: 10px;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     }
-    
+
     .navbar-nav {
         margin-top: 10px;
     }
-    
+
     .nav-item {
         margin: 5px 0;
     }
@@ -192,10 +203,14 @@ h1, h2, h3, h4, h5, h6 {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%; /* Ensure it spans the full height of the hero section */
-    z-index: -1; /* Ensure particles are behind content */
-    pointer-events: none; /* Prevent interaction with particles */
-    background: transparent; /* Ensure no background color blocks visibility */
+    height: 100%;
+    /* Ensure it spans the full height of the hero section */
+    z-index: -1;
+    /* Ensure particles are behind content */
+    pointer-events: none;
+    /* Prevent interaction with particles */
+    background: transparent;
+    /* Ensure no background color blocks visibility */
 }
 
 /* Particle Canvas Styles */
@@ -211,26 +226,29 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Hero Section */
 .hero {
-    position: relative; /* Ensure stacking context for particles */
+    position: relative;
+    /* Ensure stacking context for particles */
     background: linear-gradient(135deg, #000428, #004e92);
     color: #ffffff;
     text-align: center;
-    padding: 150px 0; /* Increased padding for a more spacious look */
-    overflow: hidden; /* Ensure video doesn't overflow */
+    padding: 150px 0;
+    /* Increased padding for a more spacious look */
+    overflow: hidden;
+    /* Ensure video doesn't overflow */
 }
 
 @media (max-width: 768px) {
     .hero {
         padding: 100px 0;
     }
-    
+
     .hero-buttons {
         display: flex;
         flex-direction: column;
         gap: 15px;
         align-items: center;
     }
-    
+
     .hero-subtitle {
         font-size: 1.2rem;
     }
@@ -265,13 +283,15 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 8, 40, 0.7); /* Dark blue overlay with opacity */
+    background: rgba(0, 8, 40, 0.7);
+    /* Dark blue overlay with opacity */
 }
 
 .glitch-text {
     font-size: 4rem;
     text-shadow: 2px 2px #ff00ff, -2px -2px #00ffff;
-    position: relative; /* Ensure text stays above video */
+    position: relative;
+    /* Ensure text stays above video */
     z-index: 1;
 }
 
@@ -289,7 +309,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section-header {
-    margin-bottom: 50px; /* Add more space below headers */
+    margin-bottom: 50px;
+    /* Add more space below headers */
 }
 
 .divider {
@@ -301,14 +322,15 @@ h1, h2, h3, h4, h5, h6 {
 
 /* General Section Spacing */
 .section {
-    padding: 100px 0; /* Increased from default */
+    padding: 100px 0;
+    /* Increased from default */
 }
 
 @media (max-width: 768px) {
     .section {
         padding: 60px 0;
     }
-    
+
     .section-header {
         margin-bottom: 30px;
     }
@@ -321,7 +343,9 @@ h1, h2, h3, h4, h5, h6 {
     padding: 20px;
     text-align: center;
     transition: transform 0.3s ease;
-    margin-bottom: 30px; /* Add spacing between feature cards */
+    margin-bottom: 30px;
+    height:89%;
+    /* Add spacing between feature cards */
 }
 
 .feature-card:hover {
@@ -331,7 +355,8 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
     .feature-card:hover {
-        transform: none; /* Disable hover scaling on mobile */
+        transform: none;
+        /* Disable hover scaling on mobile */
     }
 }
 
@@ -349,7 +374,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .gallery-grid {
-    row-gap: 30px; /* Add vertical spacing between gallery rows */
+    row-gap: 30px;
+    /* Add vertical spacing between gallery rows */
 }
 
 .gallery-overlay {
@@ -369,9 +395,10 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
     .gallery-overlay {
-        opacity: 0.7; /* Always show overlay partially on mobile for better UX */
+        opacity: 0.7;
+        /* Always show overlay partially on mobile for better UX */
     }
-    
+
     .gallery-item {
         margin-bottom: 15px;
     }
@@ -451,7 +478,8 @@ h1, h2, h3, h4, h5, h6 {
     .lightbox-close {
         top: 10px;
         right: 10px;
-        font-size: 40px; /* Larger touch target */
+        font-size: 40px;
+        /* Larger touch target */
         background: rgba(0, 0, 0, 0.5);
         width: 50px;
         height: 50px;
@@ -464,7 +492,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Roadmap Section */
 .roadmap-item {
-    margin-bottom: 50px; /* Add spacing between roadmap items */
+    margin-bottom: 50px;
+    /* Add spacing between roadmap items */
 }
 
 @media (max-width: 768px) {
@@ -477,7 +506,8 @@ h1, h2, h3, h4, h5, h6 {
 .footer {
     background: linear-gradient(135deg, #000428, #004e92);
     color: #ffffff;
-    padding: 50px 0; /* Increased padding for a more open footer */
+    padding: 50px 0;
+    /* Increased padding for a more open footer */
 }
 
 .footer-logo {
@@ -516,16 +546,16 @@ h1, h2, h3, h4, h5, h6 {
         padding: 40px 0 20px;
         text-align: center;
     }
-    
+
     .footer-logo {
         margin: 0 auto 20px;
         display: block;
     }
-    
+
     .footer h4 {
         margin-top: 20px;
     }
-    
+
     .footer-contact li {
         display: flex;
         align-items: center;
@@ -558,7 +588,8 @@ h1, h2, h3, h4, h5, h6 {
     .back-to-top {
         bottom: 15px;
         right: 15px;
-        padding: 10px 14px; /* Larger touch target */
+        padding: 10px 14px;
+        /* Larger touch target */
     }
 }
 
@@ -573,12 +604,17 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ---------- Logo Styles ---------- */
 .logo {
-    max-width: 50px; /* Adjusted size for a smaller logo */
-    height: 50px; /* Ensure the logo is square */
-    border-radius: 50%; /* Make the logo circular */
-    object-fit: cover; /* Ensure the logo fits within the circular shape */
+    max-width: 50px;
+    /* Adjusted size for a smaller logo */
+    height: 50px;
+    /* Ensure the logo is square */
+    border-radius: 50%;
+    /* Make the logo circular */
+    object-fit: cover;
+    /* Ensure the logo fits within the circular shape */
     display: block;
-    margin: 0 auto; /* Center the logo horizontally */
+    margin: 0 auto;
+    /* Center the logo horizontally */
 }
 
 /* ---------- Navbar Styles ---------- */
@@ -592,11 +628,11 @@ h1, h2, h3, h4, h5, h6 {
     .about-image {
         margin-bottom: 30px;
     }
-    
+
     .about-content h3 {
         text-align: center;
     }
-    
+
     .feature-box {
         margin-bottom: 20px;
     }
